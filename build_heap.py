@@ -5,13 +5,13 @@ def build_heap(data):
     swaps = []
     # TODO: Creat heap and heap sort
     # try to achieve  O(n) and not O(n2)
-    abc=len(data) 
+    abc = len(data) 
     for i in range (abc//2,-1,-1):
      maz(data, i, swaps)
     return swaps
 
     def maz(data, i, swaps):
-    abc = len(data)
+     abc = len(data)
     min_inde = i
     left = 2 * i + 1
     right = 2 * i + 2
